@@ -1,2 +1,4 @@
 #!/bin/bash
-cat list | sort | uniq -u
+while read -r word; do
+  echo "$word"
+done | sort | uniq -u | xargs -n1 echo
