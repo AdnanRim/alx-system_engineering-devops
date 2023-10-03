@@ -1,4 +1,2 @@
 #!/bin/bash
-while read -r word; do
-  echo "$word"
-done | sort | uniq -u | xargs -n1 echo
+cat list | sort | uniq -u | tr ' ' '\n'
