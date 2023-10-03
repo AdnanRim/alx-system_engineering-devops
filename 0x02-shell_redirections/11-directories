@@ -1,2 +1,2 @@
 #!/bin/bash
-shopt -s globstar| dirs=(**/)| echo "${#dirs[@]}"
+find . -type d -not -path '*/\.*' -not -path '.' -not -path '..' | wc -l
