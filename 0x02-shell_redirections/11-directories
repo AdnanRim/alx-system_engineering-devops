@@ -1,2 +1,2 @@
 #!/bin/bash
-shopt -s globstar; dirs=(**/); echo "${#dirs[@]}"
+shopt -s globstar| dirs=(**/)| echo "${#dirs[@]}"
